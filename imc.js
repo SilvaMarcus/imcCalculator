@@ -14,20 +14,20 @@ function imc (){
        const valorImc = (peso / (altura * altura)).toFixed(1);
 
        if (valorImc < 18.5){
-        classificacao = 'Voce esta abaixo do peso ';
+        classificacao = ' Voce esta abaixo do peso ';
     }
      if (valorImc < 25){
-    classificacao = ' voce esta com peso ideal ';
+    classificacao = ' Parabens ! Voce esta com seu Peso Ideal  ';
      }
 
      if (valorImc > 25){
-        classificacao = ' Voce esta acima do peso'
+        classificacao = ' Voce está a cima do Peso '
      }
 
-    resultado.textContent = nome + ' seu imc é de ' + valorImc + classificacao;
+    resultado.textContent = nome + ' Seu IMC é de ' + valorImc + classificacao;
     }
     else{
-        resultado.textContent = ' Preencha Todos os Campos';
+        resultado.textContent = ' Preencha Todos os Campos ';
     }
 
 
